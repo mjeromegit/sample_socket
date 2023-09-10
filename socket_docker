@@ -1,0 +1,5 @@
+FROM python:3.8
+RUN mkdir /echo
+COPY socket_server.py /echo
+EXPOSE 80
+CMD ["python", "/echo/socket_server.py"]
